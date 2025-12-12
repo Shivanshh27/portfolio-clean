@@ -88,7 +88,7 @@ export const DATA = {
   ],
   availability: {
     status: "Available",
-    message: "Open to new freelance projects and collaborations",
+    message: "for projects and new opportunities",
   },
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },

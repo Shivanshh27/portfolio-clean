@@ -55,7 +55,7 @@ export default function Page() {
                 <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
               </span>
               <p className="text-sm font-medium">
-                {DATA.availability.status} - {DATA.availability.message}
+                {DATA.availability.status} {DATA.availability.message}
               </p>
             </div>
           </div>
