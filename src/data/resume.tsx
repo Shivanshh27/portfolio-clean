@@ -12,53 +12,32 @@ export const DATA = {
     "I’m a developer who likes building things that actually work in the real world. I’ve spent the last couple of years moving from DSA and core engineering into serious web development, picking up experience through internships, side projects, and hackathons. I enjoy working on ideas that have room to grow, whether it’s a SaaS product, a Web3 experiment, or a platform that scales with real users.",
   avatarUrl: "/pfp.png",
   skills: [
-    // Programming Languages
+    // Core CS
+    "Data Structures & Algorithms",
+
+    // Programming
     "C++",
     "JavaScript",
     "TypeScript",
-    "Python",
 
     // Frontend
-    "React.js",
+    "React",
     "Next.js",
-    "Vite",
-    "HTML",
-    "CSS",
-    "Tailwind CSS",
 
     // Backend
     "Node.js",
     "Express.js",
 
-    // Databases & ORM
+    // Databases
     "MongoDB",
     "PostgreSQL",
-    "Mongoose",
-    "Drizzle ORM",
 
-    // AI & ML Integrations
-    "OpenAI API",
-    "Pinecone",
-
-    // Authentication
+    // Auth & APIs
     "JWT Authentication",
-    "Clerk",
-
-    // Cloud & Storage
-    "AWS SDK",
-    "ImageKit",
-
-    // Payments
-    "Stripe",
-
-    // File Handling
-    "Multer",
-
-    // Utilities & Tools
-    "Axios",
-    "Git",
-    "GitHub",
     "REST APIs",
+
+    // Tools
+    "Git",
   ],
   services: [
     {
