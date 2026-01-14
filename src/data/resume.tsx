@@ -142,19 +142,6 @@ export const DATA = {
 
   work: [
     {
-      company: "Pratinik Infotech Pvt. Ltd.",
-      href: "https://pratinik.com/", // add company website if available
-      badges: ["Internship"],
-      location: "Remote, India",
-      title: "Software Development Intern",
-      logoUrl:
-        "https://media.licdn.com/dms/image/v2/D4D0BAQHm6lF5cgBaOQ/company-logo_200_200/company-logo_200_200/0/1738235933982/pratinikinfotech_logo?e=1770249600&v=beta&t=uK6fslL91abQDDwtnKgldxJzx4S1I4oEtmgCJm1MtbM", // add logo URL if available
-      start: "July 2025", // update with actual start date
-      end: "September 2025",
-      description:
-        "Developed a task management platform powered by React, Node.js (Express), and MongoDB. Implemented JWT auth, protected routes, and optimized CRUD APIs. Integrated real-time task updates and a responsive UI for smooth multi-user collaboration.",
-    },
-    {
       company: "ElevanceSkills",
       href: "https://elevanceskills.com/",
       badges: ["Internship"],
@@ -165,6 +152,19 @@ export const DATA = {
       end: "January 2026",
       description:
         "Worked on a large-scale student platform focusing on security, payments, and access control. Built a public community space with media uploads, likes, comments, and dynamic posting limits based on user connections. Implemented secure authentication features including OTP-based login verification, forgot password flows with rate limiting, and detailed login history tracking. Integrated Razorpay/Stripe subscription plans with time-restricted payment windows, automated invoice emails, and premium features such as resume generation with OTP verification. Also contributed to multi-language support across the platform with additional security checks for sensitive language changes.",
+    },
+    {
+      company: "Pratinik Infotech Pvt. Ltd.",
+      href: "https://pratinik.com/", // add company website if available
+      badges: ["Internship"],
+      location: "Remote, India",
+      title: "Software Development Intern",
+      logoUrl:
+        "https://pratinik.com/wp-content/uploads/2025/01/Pratinik-Infotech.png", // add logo URL if available
+      start: "July 2025", // update with actual start date
+      end: "September 2025",
+      description:
+        "Developed a task management platform powered by React, Node.js (Express), and MongoDB. Implemented JWT auth, protected routes, and optimized CRUD APIs. Integrated real-time task updates and a responsive UI for smooth multi-user collaboration.",
     },
 
     // {
