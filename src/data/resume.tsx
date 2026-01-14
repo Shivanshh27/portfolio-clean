@@ -347,11 +347,11 @@ export const DATA = {
         "cookie-parser",
       ],
       links: [
-        {
-          type: "Website",
-          href: "xxx",
-          icon: <Icons.globe className="size-3" />,
-        },
+        // {
+        //   type: "Website",
+        //   href: "xxx",
+        //   icon: <Icons.globe className="size-3" />,
+        // },
         {
           type: "Source",
           href: "https://github.com/Shivanshh27/VIdeo-Hosting-Platform",
