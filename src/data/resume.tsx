@@ -148,7 +148,7 @@ export const DATA = {
       location: "Remote, India",
       title: "Software Development Intern",
       logoUrl:
-        "https://pratinik.com/wp-content/uploads/2025/01/Pratinik-Infotech.png", // add logo URL if available
+        "https://media.licdn.com/dms/image/v2/D4D0BAQHm6lF5cgBaOQ/company-logo_200_200/company-logo_200_200/0/1738235933982/pratinikinfotech_logo?e=1770249600&v=beta&t=uK6fslL91abQDDwtnKgldxJzx4S1I4oEtmgCJm1MtbM", // add logo URL if available
       start: "July 2025", // update with actual start date
       end: "September 2025",
       description:
