@@ -154,6 +154,19 @@ export const DATA = {
       description:
         "Developed a task management platform powered by React, Node.js (Express), and MongoDB. Implemented JWT auth, protected routes, and optimized CRUD APIs. Integrated real-time task updates and a responsive UI for smooth multi-user collaboration.",
     },
+    {
+      company: "ElevanceSkills",
+      href: "https://elevanceskills.com/",
+      badges: ["Internship"],
+      location: "Remote, India",
+      title: "Full Stack Web Development Intern",
+      logoUrl: "https://d8tj1uzmn0yrp.cloudfront.net/favicon/header2.png", // add logo URL if you have one
+      start: "December 2025",
+      end: "January 2026",
+      description:
+        "Worked on a large-scale student platform focusing on security, payments, and access control. Built a public community space with media uploads, likes, comments, and dynamic posting limits based on user connections. Implemented secure authentication features including OTP-based login verification, forgot password flows with rate limiting, and detailed login history tracking. Integrated Razorpay/Stripe subscription plans with time-restricted payment windows, automated invoice emails, and premium features such as resume generation with OTP verification. Also contributed to multi-language support across the platform with additional security checks for sensitive language changes.",
+    },
+
     // {
     //   company: "Pikme",
     //   href: "https://pikme.app", // replace with actual if you have
