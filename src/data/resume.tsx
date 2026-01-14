@@ -160,7 +160,7 @@ export const DATA = {
       badges: ["Internship"],
       location: "Remote, India",
       title: "Full Stack Web Development Intern",
-      logoUrl: "https://d8tj1uzmn0yrp.cloudfront.net/favicon/header2.png", // add logo URL if you have one
+      logoUrl: "https://d8tj1uzmn0yrp.cloudfront.net/favicon/logo.jpg", // add logo URL if you have one
       start: "December 2025",
       end: "January 2026",
       description:
