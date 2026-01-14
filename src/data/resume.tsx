@@ -72,7 +72,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     {
-      href: "https://drive.google.com/file/d/1taQ0oYNE5JyjgLJ2GuyCrP-Mxf1lOYmI/view?usp=sharing",
+      href: "/resume.pdf",
       icon: FileTextIcon,
       label: "Resume",
     },
