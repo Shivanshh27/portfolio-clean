@@ -24,21 +24,21 @@ export default function Page() {
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
-            <div className="flex-col flex flex-1 space-y-1.5">
+            <div className="flex-col flex flex-1 space-y-2">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none"
+                className="text-3xl font-extrabold tracking-tighter sm:text-5xl xl:text-6xl/none bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 dark:from-cyan-400 dark:via-blue-400 dark:to-purple-500 bg-clip-text text-transparent pb-1"
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
               />
               <BlurFadeText
-                className="max-w-[600px] md:text-xl"
+                className="max-w-[600px] text-muted-foreground md:text-xl font-medium tracking-tight"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
+              <Avatar className="size-28 border shadow-[0_4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.02)]">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
@@ -48,14 +48,14 @@ export default function Page() {
       </section>
       <section id="availability">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <div className="rounded-lg border bg-card p-4 text-center">
-            <div className="flex items-center justify-center gap-2">
-              <span className="relative flex h-3 w-3">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-                <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
+          <div className="rounded-xl border bg-card/40 backdrop-blur-md px-4 py-3 text-center shadow-[0_4px_20px_-2px_rgba(0,0,0,0.03)] dark:shadow-[0_4px_20px_-2px_rgba(255,255,255,0.01)] transition-all duration-300 hover:bg-card/75 hover:border-emerald-500/20">
+            <div className="flex items-center justify-center gap-2.5">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
               </span>
-              <p className="text-sm font-medium">
-                {DATA.availability.status} {DATA.availability.message}
+              <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                <span className="text-foreground font-bold">{DATA.availability.status}</span> — {DATA.availability.message}
               </p>
             </div>
           </div>
@@ -71,35 +71,6 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
-      {/* <section id="services">
-        <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 6}>
-            <h2 className="text-xl font-bold">Services</h2>
-          </BlurFade>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            {DATA.services.map((service, id) => (
-              <BlurFade
-                key={service.title}
-                delay={BLUR_FADE_DELAY * 7 + id * 0.05}
-              >
-                <Card className="h-full border hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <div className="flex items-center gap-3">
-                      <span className="text-2xl">{service.icon}</span>
-                      <CardTitle className="text-lg">{service.title}</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-sm">
-                      {service.description}
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-              </BlurFade>
-            ))}
-          </div>
-        </div>
-      </section> */}
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 8}>
@@ -153,10 +124,70 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 12}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-          <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 13 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+          
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {[
+              {
+                category: "Programming",
+                skills: ["C++", "JavaScript (ES6+)", "TypeScript", "Python (basics)"],
+                gradient: "from-blue-500/10 to-cyan-500/5 dark:from-blue-500/10 dark:to-cyan-400/5",
+                border: "hover:border-blue-500/30"
+              },
+              {
+                category: "Frontend",
+                skills: ["React.js", "Next.js", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "SCSS"],
+                gradient: "from-purple-500/10 to-pink-500/5 dark:from-purple-500/10 dark:to-pink-400/5",
+                border: "hover:border-purple-500/30"
+              },
+              {
+                category: "Backend",
+                skills: ["Node.js", "Express.js", "RESTful APIs", "MongoDB", "JWT Authentication"],
+                gradient: "from-emerald-500/10 to-teal-500/5 dark:from-emerald-500/10 dark:to-teal-400/5",
+                border: "hover:border-emerald-500/30"
+              },
+              {
+                category: "Developer Tools",
+                skills: ["Git", "GitHub", "VS Code", "Postman", "Chrome DevTools", "npm"],
+                gradient: "from-amber-500/10 to-orange-500/5 dark:from-amber-500/10 dark:to-orange-400/5",
+                border: "hover:border-amber-500/30"
+              },
+              {
+                category: "Design & Utilities",
+                skills: ["Figma", "Shopify", "WordPress", "ImageKit", "Cloudinary"],
+                gradient: "from-rose-500/10 to-red-500/5 dark:from-rose-500/10 dark:to-red-400/5",
+                border: "hover:border-rose-500/30"
+              },
+              {
+                category: "Core CS Skills",
+                skills: ["Data Structures & Algorithms", "Problem Solving"],
+                gradient: "from-indigo-500/10 to-violet-500/5 dark:from-indigo-500/10 dark:to-violet-400/5",
+                border: "hover:border-indigo-500/30"
+              }
+            ].map((cat, id) => (
+              <BlurFade
+                key={cat.category}
+                delay={BLUR_FADE_DELAY * 13 + id * 0.05}
+              >
+                <div className={`p-5 rounded-xl border bg-card/20 backdrop-blur-sm transition-all duration-300 ${cat.border} hover:bg-card/40 hover:-translate-y-1 hover:shadow-md relative overflow-hidden`}>
+                  {/* Subtle color blob behind card */}
+                  <div className={`absolute -right-10 -bottom-10 size-24 rounded-full bg-gradient-to-br ${cat.gradient} blur-2xl pointer-events-none`} />
+                  
+                  <h3 className="text-xs font-semibold tracking-wider uppercase text-muted-foreground mb-3 relative z-10">
+                    {cat.category}
+                  </h3>
+                  
+                  <div className="flex flex-wrap gap-1.5 relative z-10">
+                    {cat.skills.map((skill) => (
+                      <Badge 
+                        key={skill} 
+                        variant="secondary"
+                        className="text-xs bg-secondary/40 backdrop-blur-sm border hover:bg-secondary/70 transition-colors duration-200"
+                      >
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
               </BlurFade>
             ))}
           </div>
@@ -203,19 +234,23 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="collaboration">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-4">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+      <section id="collaboration" className="py-6">
+        <BlurFade delay={BLUR_FADE_DELAY * 16}>
+          <div className="relative rounded-2xl border border-border/80 bg-card/30 backdrop-blur-md p-6 sm:p-10 text-center overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.05)] dark:shadow-[0_8px_32px_rgba(255,255,255,0.01)]">
+            {/* Glowing Accent Ring inside the card */}
+            <div className="absolute -right-20 -top-20 size-40 rounded-full bg-blue-500/10 blur-3xl pointer-events-none" />
+            <div className="absolute -left-20 -bottom-20 size-40 rounded-full bg-purple-500/10 blur-3xl pointer-events-none" />
+
+            <div className="space-y-4 relative z-10">
+              <div className="inline-block rounded-full bg-primary/10 text-primary border border-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider">
                 Freelance & Collaboration
               </div>
 
-              <h2 className="text-2xl font-semibold tracking-tight sm:text-4xl">
+              <h2 className="text-2xl font-bold tracking-tight sm:text-4xl">
                 Want to Build Something Impactful?
               </h2>
 
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
+              <p className="mx-auto max-w-lg text-sm text-muted-foreground leading-relaxed">
                 I help build AI-powered applications, scalable full-stack
                 platforms, and modern digital products. Whether you need an
                 end-to-end system, backend architecture, or an AI integration,
@@ -223,7 +258,7 @@ export default function Page() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-4">
-                <Button asChild size="lg" className="w-full sm:w-auto">
+                <Button asChild size="lg" className="w-full sm:w-auto shadow-md transition-all duration-300 hover:scale-105 active:scale-95">
                   <Link href="tel:+917049949474" title="+91 70499 49474">
                     Call Now
                   </Link>
@@ -233,7 +268,7 @@ export default function Page() {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="w-full sm:w-auto"
+                  className="w-full sm:w-auto hover:bg-primary/5 transition-all duration-300 hover:scale-105 active:scale-95"
                 >
                   <Link
                     href={`mailto:${DATA.contact.email}?subject=Project Inquiry`}
@@ -244,8 +279,8 @@ export default function Page() {
                 </Button>
               </div>
             </div>
-          </BlurFade>
-        </div>
+          </div>
+        </BlurFade>
       </section>
     </main>
   );

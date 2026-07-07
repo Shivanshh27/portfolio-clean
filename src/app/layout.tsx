@@ -57,10 +57,15 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
+          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6 relative overflow-x-hidden",
           fontSans.variable
         )}
       >
+        {/* Ambient Glow Blobs */}
+        <div className="fixed -top-[10%] -left-[20%] w-[500px] h-[500px] rounded-full bg-cyan-400/10 dark:bg-cyan-500/5 blur-[120px] pointer-events-none z-[-1] animate-pulse" style={{ animationDuration: "10s" }} />
+        <div className="fixed -bottom-[10%] -right-[20%] w-[600px] h-[600px] rounded-full bg-purple-400/10 dark:bg-purple-500/5 blur-[130px] pointer-events-none z-[-1]" />
+        <div className="fixed top-[35%] right-[-10%] w-[300px] h-[300px] rounded-full bg-blue-400/10 dark:bg-blue-500/5 blur-[100px] pointer-events-none z-[-1]" />
+
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
             {children}

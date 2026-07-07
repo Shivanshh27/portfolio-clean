@@ -43,12 +43,12 @@ export function ProjectCard({
   return (
     <Card
       className={
-        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
+        "group flex flex-col overflow-hidden border bg-card/30 backdrop-blur-sm hover:bg-card/60 transition-all duration-300 ease-out hover:-translate-y-1.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)] dark:hover:shadow-[0_8px_30px_rgba(255,255,255,0.01)] hover:border-primary/25 h-full"
       }
     >
       <Link
         href={href || "#"}
-        className={cn("block cursor-pointer", className)}
+        className={cn("block cursor-pointer overflow-hidden", className)}
       >
         {video && (
           <video
@@ -57,7 +57,7 @@ export function ProjectCard({
             loop
             muted
             playsInline
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
+            className="pointer-events-none mx-auto h-40 w-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105" // needed because random black line at bottom of video
           />
         )}
         {image && (
@@ -66,7 +66,7 @@ export function ProjectCard({
             alt={title}
             width={500}
             height={300}
-            className="h-40 w-full overflow-hidden object-cover object-top"
+            className="h-40 w-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
           />
         )}
       </Link>

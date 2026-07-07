@@ -121,6 +121,19 @@ export const DATA = {
 
   work: [
     {
+      company: "Yasa Ed Tech",
+      href: "https://www.linkedin.com/company/yasaedtech/",
+      badges: ["Internship"],
+      location: "Remote, India",
+      title: "Software Engineering Intern",
+      logoUrl:
+        "https://media.licdn.com/dms/image/v2/D4D0BAQENCFaCEvoTPg/company-logo_200_200/company-logo_200_200/0/1734646084476/yasaedtech_logo?e=1784764800&v=beta&t=tt93fgjzNNTnATYJIxqjzpt5hwMv1iWGyzzGFg8GJGc",
+      start: "May 2026",
+      end: "July 2026",
+      description:
+        "Enhanced existing frontend features using React.js, Next.js, TypeScript, and Tailwind CSS while maintaining a responsive and consistent user interface. Implemented UI improvements, integrated REST APIs, and resolved frontend issues to improve usability, performance, and overall user experience. Collaborated with developers using Git, participated in code reviews, and contributed to feature enhancements following Agile development practices.",
+    },
+    {
       company: "ElevanceSkills",
       href: "https://elevanceskills.com/",
       badges: ["Internship"],
@@ -227,6 +240,130 @@ export const DATA = {
   ],
   pprojects: [
     {
+      title: "SleekLink — URL Shortener & Visitor Analytics",
+      href: "https://sleeklink.shivansh.online",
+      dates: "2026",
+      active: true,
+      description:
+        "High-performance URL shortener featuring a glassmorphic user dashboard, real-time analytics, timezone-aware charts, dynamic QR code generation, client-side registry search, and active/paused link controls. Redirections are cached in Redis for sub-millisecond lookups, utilizing a write-through caching pattern.",
+      technologies: [
+        "React.js",
+        "Vite",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Redis Caching",
+        "Timezone-Aware SQL",
+        "SVG Charts",
+        "QR Generation",
+        "Base62 Encoding",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://sleeklink.shivansh.online",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Shivanshh27/SleekLink",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/sleeklink.svg",
+      video: "",
+    },
+    {
+      title: "ShopIQ AI — Voice-Navigated E-Commerce Ecosystem",
+      href: "https://github.com/Shivanshh27/ShopIQ-AI",
+      dates: "2026",
+      active: true,
+      description:
+        "Developed a full-stack e-commerce ecosystem consisting of a user storefront, administrative panel, and Express.js backend. Features a hands-free AI voice navigation system using the browser's native Web Speech API, Google OAuth via Firebase, dynamic multi-image uploads to Cloudinary, and secure Razorpay payment processing.",
+      technologies: [
+        "React 19",
+        "Vite",
+        "Tailwind CSS v4",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "Firebase Auth",
+        "Razorpay",
+        "Cloudinary",
+        "Web Speech API",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Shivanshh27/ShopIQ-AI",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/shopiq.svg",
+      video: "",
+    },
+    {
+      title: "TradeMetrics — Portfolio Analytics Engine",
+      href: "https://github.com/Shivanshh27/TradeMetrics",
+      dates: "2026",
+      active: true,
+      description:
+        "High-performance trading journal and portfolio analyzer. Offloads 100% of analytical computations directly to a PostgreSQL database using raw, optimized SQL queries without an ORM. Implemented cumulative equity curves and drawdown window functions, trigger-based P&L auto-computations, recursive CTE strategy rollups, and win-rate stored functions.",
+      technologies: [
+        "React.js",
+        "Vite",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Raw SQL",
+        "PL/pgSQL Triggers",
+        "Stored Functions",
+        "Window Functions",
+        "CTEs",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Shivanshh27/TradeMetrics",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/trademetrics.svg",
+      video: "",
+    },
+    {
+      title: "Route Navigation Pathfinding Visualizer",
+      href: "https://github.com/Shivanshh27/route-navigation-engine",
+      dates: "2026",
+      active: true,
+      description:
+        "Spatial pathfinding visualizer running a compiled C++17 core pathfinding engine connected to a Node.js REST API gateway and a glassmorphic HTML5 Canvas client. Features A*, Dijkstra, BFS, and DFS path searches. Built a Redis caching layer to bypass compiled binary subprocess creation overhead, achieving a 10x speedup (<1.5ms response time).",
+      technologies: [
+        "C++17",
+        "Node.js",
+        "Express.js",
+        "Redis",
+        "HTML5 Canvas",
+        "Glassmorphism",
+        "Subprocess Integration",
+        "Caching Patterns",
+        "A* Search",
+        "Dijkstra",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Shivanshh27/route-navigation-engine",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/route.svg",
+      video: "",
+    },
+    {
       title: "Resume Builder AI ",
       href: "https://ai-powered-resume-builder-tau.vercel.app/",
       dates: "2025",
@@ -256,7 +393,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/resumebuilder.png",
+      image: "/resumebuilder.svg",
       video: "",
     },
     {
@@ -292,7 +429,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/chatpdf.png",
+      image: "/chatpdf.svg",
       video: "",
     },
     {
@@ -323,7 +460,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/krux.png",
+      image: "/krux.svg",
       video: "",
     },
     {
@@ -358,7 +495,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/videohosting.png",
+      image: "/videohosting.svg",
       video: "",
     },
   ],

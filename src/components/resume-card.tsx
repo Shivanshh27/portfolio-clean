@@ -1,6 +1,6 @@
 "use client";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
@@ -44,16 +44,21 @@ export const ResumeCard = ({
       className="block cursor-pointer"
       onClick={handleClick}
     >
-      <Card className="flex">
+      <Card className="flex border bg-card/20 backdrop-blur-sm hover:bg-card/50 transition-all duration-300 hover:border-primary/20 hover:shadow-[0_4px_20px_rgba(0,0,0,0.02)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.005)]">
         <div className="flex-none">
-          <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
-            <AvatarImage
-              src={logoUrl}
-              alt={altText}
-              className="object-contain"
-            />
-            <AvatarFallback>{altText[0]}</AvatarFallback>
-          </Avatar>
+          <div className="border size-12 rounded-full overflow-hidden m-auto bg-muted-background dark:bg-foreground flex items-center justify-center">
+            {logoUrl ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={logoUrl}
+                alt={altText}
+                className="object-contain size-full"
+                referrerPolicy="no-referrer"
+              />
+            ) : (
+              <span className="text-xs font-semibold">{altText[0]}</span>
+            )}
+          </div>
         </div>
         <div className="flex-grow ml-4 items-center flex-col group">
           <CardHeader>
