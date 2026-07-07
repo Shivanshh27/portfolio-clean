@@ -26,6 +26,7 @@ interface Props {
     href: string;
   }[];
   className?: string;
+  onClick?: () => void;
 }
 
 export function ProjectCard({
@@ -39,17 +40,17 @@ export function ProjectCard({
   video,
   links,
   className,
+  onClick,
 }: Props) {
   return (
     <Card
-      className={
-        "group flex flex-col overflow-hidden border bg-card/30 backdrop-blur-sm hover:bg-card/60 transition-all duration-300 ease-out hover:-translate-y-1.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)] dark:hover:shadow-[0_8px_30px_rgba(255,255,255,0.01)] hover:border-primary/25 h-full"
-      }
+      onClick={onClick}
+      className={cn(
+        "group flex flex-col overflow-hidden border bg-card/30 backdrop-blur-sm hover:bg-card/60 transition-all duration-300 ease-out hover:-translate-y-1.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.05)] dark:hover:shadow-[0_8px_30px_rgba(255,255,255,0.01)] hover:border-primary/25 h-full",
+        onClick && "cursor-pointer"
+      )}
     >
-      <Link
-        href={href || "#"}
-        className={cn("block cursor-pointer overflow-hidden", className)}
-      >
+      <div className={cn("block overflow-hidden", className)}>
         {video && (
           <video
             src={video}
@@ -69,7 +70,7 @@ export function ProjectCard({
             className="h-40 w-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
           />
         )}
-      </Link>
+      </div>
       <CardHeader className="px-2">
         <div className="space-y-1">
           <CardTitle className="mt-1 text-base">{title}</CardTitle>
@@ -101,7 +102,12 @@ export function ProjectCard({
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
             {links?.map((link, idx) => (
-              <Link href={link?.href} key={idx} target="_blank">
+              <Link
+                href={link?.href}
+                key={idx}
+                target="_blank"
+                onClick={(e) => e.stopPropagation()}
+              >
                 <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
                   {link.icon}
                   {link.type}

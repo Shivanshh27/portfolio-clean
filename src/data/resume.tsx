@@ -12,32 +12,43 @@ export const DATA = {
     "I’m a developer who likes building things that actually work in the real world. I’ve spent the last couple of years moving from DSA and core engineering into serious web development, picking up experience through internships, side projects, and hackathons. I enjoy working on ideas that have room to grow, whether it’s a SaaS product, a Web3 experiment, or a platform that scales with real users.",
   avatarUrl: "/pfp.png",
   skills: [
-    // Core CS
-    "Data Structures & Algorithms",
-
     // Programming
     "C++",
+    "Python",
     "JavaScript",
     "TypeScript",
 
     // Frontend
-    "React",
+    "React.js",
     "Next.js",
+    "HTML",
+    "CSS",
+    "Tailwind CSS",
 
     // Backend
     "Node.js",
     "Express.js",
+    "REST APIs",
+    "JWT Authentication",
 
     // Databases
-    "MongoDB",
     "PostgreSQL",
+    "MongoDB",
+    "Redis",
 
-    // Auth & APIs
-    "JWT Authentication",
-    "REST APIs",
-
-    // Tools
+    // Tools & Platforms
     "Git",
+    "GitHub",
+    "Postman",
+    "Cloudinary",
+    "Render",
+    "Vercel",
+
+    // Core CS
+    "Data Structures and Algorithms",
+    "Object-Oriented Programming (OOP)",
+    "Database Management Systems (DBMS)",
+    "Operating Systems",
   ],
   services: [
     {
@@ -95,13 +106,7 @@ export const DATA = {
 
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://x.com/shivanshh27",
-        icon: Icons.x,
 
-        navbar: true,
-      },
       email: {
         name: "Send Email",
         url: "#",

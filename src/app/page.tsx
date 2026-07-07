@@ -1,3 +1,8 @@
+"use client";
+
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { X as XIcon } from "lucide-react";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -19,6 +24,8 @@ import Markdown from "react-markdown";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
+  const [activeProject, setActiveProject] = useState<any>(null);
+
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -29,7 +36,7 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-extrabold tracking-tighter sm:text-5xl xl:text-6xl/none bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 dark:from-cyan-400 dark:via-blue-400 dark:to-purple-500 bg-clip-text text-transparent pb-1"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+                text={DATA.name}
               />
               <BlurFadeText
                 className="max-w-[600px] text-muted-foreground md:text-xl font-medium tracking-tight"
@@ -128,40 +135,45 @@ export default function Page() {
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {[
               {
-                category: "Programming",
-                skills: ["C++", "JavaScript (ES6+)", "TypeScript", "Python (basics)"],
+                category: "Languages",
+                skills: ["C++", "Python", "JavaScript", "TypeScript"],
                 gradient: "from-blue-500/10 to-cyan-500/5 dark:from-blue-500/10 dark:to-cyan-400/5",
                 border: "hover:border-blue-500/30"
               },
               {
                 category: "Frontend",
-                skills: ["React.js", "Next.js", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "SCSS"],
+                skills: ["React.js", "Next.js", "HTML", "CSS", "Tailwind CSS"],
                 gradient: "from-purple-500/10 to-pink-500/5 dark:from-purple-500/10 dark:to-pink-400/5",
                 border: "hover:border-purple-500/30"
               },
               {
                 category: "Backend",
-                skills: ["Node.js", "Express.js", "RESTful APIs", "MongoDB", "JWT Authentication"],
+                skills: ["Node.js", "Express.js", "REST APIs", "JWT Authentication"],
                 gradient: "from-emerald-500/10 to-teal-500/5 dark:from-emerald-500/10 dark:to-teal-400/5",
                 border: "hover:border-emerald-500/30"
               },
               {
-                category: "Developer Tools",
-                skills: ["Git", "GitHub", "VS Code", "Postman", "Chrome DevTools", "npm"],
+                category: "Databases",
+                skills: ["PostgreSQL", "MongoDB", "Redis"],
+                gradient: "from-indigo-500/10 to-violet-500/5 dark:from-indigo-500/10 dark:to-violet-400/5",
+                border: "hover:border-indigo-500/30"
+              },
+              {
+                category: "Tools & Platforms",
+                skills: ["Git", "GitHub", "Postman", "Cloudinary", "Render", "Vercel"],
                 gradient: "from-amber-500/10 to-orange-500/5 dark:from-amber-500/10 dark:to-orange-400/5",
                 border: "hover:border-amber-500/30"
               },
               {
-                category: "Design & Utilities",
-                skills: ["Figma", "Shopify", "WordPress", "ImageKit", "Cloudinary"],
+                category: "Core CS",
+                skills: [
+                  "Data Structures and Algorithms",
+                  "Object-Oriented Programming (OOP)",
+                  "Database Management Systems (DBMS)",
+                  "Operating Systems"
+                ],
                 gradient: "from-rose-500/10 to-red-500/5 dark:from-rose-500/10 dark:to-red-400/5",
                 border: "hover:border-rose-500/30"
-              },
-              {
-                category: "Core CS Skills",
-                skills: ["Data Structures & Algorithms", "Problem Solving"],
-                gradient: "from-indigo-500/10 to-violet-500/5 dark:from-indigo-500/10 dark:to-violet-400/5",
-                border: "hover:border-indigo-500/30"
               }
             ].map((cat, id) => (
               <BlurFade
@@ -219,7 +231,6 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY * 15 + id * 0.05}
               >
                 <ProjectCard
-                  href={project.href}
                   key={project.title}
                   title={project.title}
                   description={project.description}
@@ -228,6 +239,7 @@ export default function Page() {
                   image={project.image}
                   video={project.video}
                   links={project.links}
+                  onClick={() => setActiveProject(project)}
                 />
               </BlurFade>
             ))}
@@ -282,6 +294,130 @@ export default function Page() {
           </div>
         </BlurFade>
       </section>
+
+      <AnimatePresence>
+        {activeProject && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-md">
+            {/* Backdrop click to close */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="absolute inset-0 cursor-pointer"
+              onClick={() => setActiveProject(null)}
+            />
+
+            {/* Modal Box */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              transition={{ type: "spring", duration: 0.5 }}
+              className="relative w-full max-w-2xl overflow-hidden rounded-2xl border border-border bg-card/90 backdrop-blur-xl p-6 shadow-2xl flex flex-col md:flex-row gap-6 max-h-[85vh] md:max-h-none overflow-y-auto md:overflow-visible z-50"
+            >
+              {/* Glowing decorative ring inside modal */}
+              <div className="absolute -right-20 -top-20 size-40 rounded-full bg-primary/10 blur-3xl pointer-events-none" />
+
+              {/* Close Button */}
+              <button
+                onClick={() => setActiveProject(null)}
+                className="absolute top-4 right-4 p-1.5 rounded-full border bg-secondary/85 hover:bg-secondary text-muted-foreground hover:text-foreground transition-all duration-200 z-50 shadow-sm"
+              >
+                <XIcon className="size-4" />
+              </button>
+
+              {/* Left Column: Image / Video Preview */}
+              <div className="w-full md:w-1/2 flex flex-col justify-center">
+                <div className="relative rounded-xl overflow-hidden border bg-muted flex items-center justify-center w-full aspect-video md:h-52">
+                  {activeProject.video ? (
+                    <video
+                      src={activeProject.video}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="size-full object-cover object-top"
+                    />
+                  ) : activeProject.image ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={activeProject.image}
+                      alt={activeProject.title}
+                      className="size-full object-cover object-top"
+                    />
+                  ) : (
+                    <div className="text-muted-foreground text-xs">No preview available</div>
+                  )}
+                </div>
+
+                {/* Tags */}
+                {activeProject.technologies && (
+                  <div className="mt-4 flex flex-wrap gap-1">
+                    {activeProject.technologies.map((tag: string) => (
+                      <Badge
+                        key={tag}
+                        variant="secondary"
+                        className="text-[10px] px-1.5 py-0.5"
+                      >
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Right Column: Title & Description Bullet Points */}
+              <div className="w-full md:w-1/2 flex flex-col justify-between">
+                <div>
+                  <h3 className="text-lg font-bold tracking-tight text-foreground pr-8">
+                    {activeProject.title}
+                  </h3>
+                  <p className="text-xs text-muted-foreground mt-1 mb-4 font-sans">{activeProject.dates}</p>
+
+                  <div className="max-w-full text-xs text-muted-foreground font-sans leading-relaxed space-y-3">
+                    {/* Check if description contains bullet points or needs to be split */}
+                    {activeProject.description.split(" • ").length > 1 ? (
+                      <ul className="list-disc pl-4 space-y-2">
+                        {activeProject.description.split(" • ").map((bullet: string, i: number) => (
+                          <li key={i}>{bullet.trim()}</li>
+                        ))}
+                      </ul>
+                    ) : activeProject.description.split(". ").length > 1 ? (
+                      <ul className="list-disc pl-4 space-y-2">
+                        {activeProject.description.split(". ").filter((s: string) => s.trim().length > 0).map((bullet: string, i: number) => (
+                          <li key={i}>{bullet.trim() + (bullet.endsWith(".") ? "" : ".")}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p>{activeProject.description}</p>
+                    )}
+                  </div>
+                </div>
+
+                {/* Footer Actions */}
+                <div className="flex gap-3 pt-6 mt-auto">
+                  {activeProject.links && activeProject.links.map((lnk: any, idx: number) => (
+                    <a
+                      key={idx}
+                      href={lnk.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-semibold shadow-sm transition-all duration-300 hover:scale-105 active:scale-95 border ${
+                        lnk.type === "Website" 
+                          ? "bg-primary text-primary-foreground hover:bg-primary/90 border-primary" 
+                          : "bg-secondary text-secondary-foreground hover:bg-secondary/90 border-border"
+                      }`}
+                    >
+                      {lnk.icon}
+                      <span>View {lnk.type}</span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </main>
   );
 }

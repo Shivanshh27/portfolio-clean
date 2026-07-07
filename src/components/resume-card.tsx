@@ -44,7 +44,7 @@ export const ResumeCard = ({
       className="block cursor-pointer"
       onClick={handleClick}
     >
-      <Card className="flex border bg-card/20 backdrop-blur-sm hover:bg-card/50 transition-all duration-300 hover:border-primary/20 hover:shadow-[0_4px_20px_rgba(0,0,0,0.02)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.005)]">
+      <Card className="flex">
         <div className="flex-none">
           <div className="border size-12 rounded-full overflow-hidden m-auto bg-muted-background dark:bg-foreground flex items-center justify-center">
             {logoUrl ? (
