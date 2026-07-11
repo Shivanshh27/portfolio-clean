@@ -34,7 +34,7 @@ export default function Page() {
             <div className="flex-col flex flex-1 space-y-2">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-extrabold tracking-tighter sm:text-5xl xl:text-6xl/none bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 dark:from-cyan-400 dark:via-blue-400 dark:to-purple-500 bg-clip-text text-transparent pb-1"
+                className="text-3xl font-extrabold tracking-tighter sm:text-5xl xl:text-6xl/none text-black dark:text-transparent dark:bg-gradient-to-r dark:from-cyan-400 dark:via-blue-400 dark:to-purple-500 dark:bg-clip-text pb-1"
                 yOffset={8}
                 text={DATA.name}
               />

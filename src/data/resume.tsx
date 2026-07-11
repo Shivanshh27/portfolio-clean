@@ -9,7 +9,7 @@ export const DATA = {
   // locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description: "Building. Learning. Improving.",
   summary:
-    "I’m a developer who likes building things that actually work in the real world. I’ve spent the last couple of years moving from DSA and core engineering into serious web development, picking up experience through internships, side projects, and hackathons. I enjoy working on ideas that have room to grow, whether it’s a SaaS product, a Web3 experiment, or a platform that scales with real users.",
+    "Passionate Software Engineer and Full-Stack Developer focused on building high-performance, scalable web systems. Experienced in developing core C++ pathfinding engines, optimized write-through caching pipelines with Redis, and AI-powered voice navigators. Proven record of solving 800+ algorithmic problems across LeetCode, Codeforces, and GeeksforGeeks, and shipping real-world user features through developer internships.",
   avatarUrl: "/pfp.png",
   skills: [
     // Programming
