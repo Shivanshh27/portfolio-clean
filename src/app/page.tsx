@@ -152,30 +152,6 @@ export default function Page() {
         </BlurFade>
       </section>
 
-      {/* Key Metrics / Credibility Ribbon */}
-      <section id="metrics">
-        <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            {DATA.metrics.map((metric, idx) => (
-              <div
-                key={idx}
-                className="group relative overflow-hidden rounded-xl border bg-card/30 backdrop-blur-sm p-4 text-center transition-all duration-300 hover:bg-card/60 hover:-translate-y-1 hover:border-primary/20 hover:shadow-md"
-              >
-                <div className="text-2xl sm:text-3xl font-extrabold tracking-tight text-foreground group-hover:text-primary transition-colors">
-                  {metric.value}
-                </div>
-                <div className="text-xs font-semibold text-foreground/90 mt-1">
-                  {metric.label}
-                </div>
-                <div className="text-[10px] text-muted-foreground mt-0.5 line-clamp-1">
-                  {metric.subtext}
-                </div>
-              </div>
-            ))}
-          </div>
-        </BlurFade>
-      </section>
-
       {/* About Section */}
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 5}>
