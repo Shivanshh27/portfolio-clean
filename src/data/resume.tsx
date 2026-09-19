@@ -287,7 +287,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/sleeklink.svg",
+      image: "/sleeklink.png",
       video: "",
     },
     {
@@ -317,7 +317,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/agromind.svg",
+      image: "/agromind.png",
       video: "",
     },
     {
@@ -346,7 +346,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/upiscam.svg",
+      image: "/upiscam.png",
       video: "",
     },
     {
@@ -377,7 +377,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/shopiq.svg",
+      image: "/shopiq.png",
       video: "",
     },
     {
@@ -409,7 +409,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/trademetrics.svg",
+      image: "/trademetrics.png",
       video: "",
     },
     {
@@ -440,7 +440,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/route.svg",
+      image: "/route.png",
       video: "",
     },
     {
@@ -475,7 +475,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/resumebuilder.svg",
+      image: "/resumebuilder.png",
       video: "",
     },
     {
@@ -505,7 +505,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/videohosting.svg",
+      image: "/videohosting.png",
       video: "",
     },
   ],
