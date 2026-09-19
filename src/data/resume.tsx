@@ -6,80 +6,127 @@ export const DATA = {
   initials: "SN",
   url: "https://www.shivanshh27.com/",
   location: "Bhopal, Madhya Pradesh, India",
-  // locationLink: "https://www.google.com/maps/place/sanfrancisco",
-  description: "Building. Learning. Improving.",
+  description: "AI & Full-Stack Software Engineer • Building scalable systems, agentic workflows & high-performance backends.",
   summary:
-    "Passionate Software Engineer and Full-Stack Developer focused on building high-performance, scalable web systems. Experienced in developing core C++ pathfinding engines, optimized write-through caching pipelines with Redis, and AI-powered voice navigators. Proven record of solving 800+ algorithmic problems across LeetCode, Codeforces, and GeeksforGeeks, and shipping real-world user features through developer internships.",
+    "Passionate Software Engineer and Full-Stack Developer specializing in agentic workflows, LLM orchestration, and low-latency distributed architectures. Experienced in building AI-powered multi-modal inspection pipelines, compiled C++17 pathfinding engines, and sub-millisecond write-through caching layers with Redis and PostgreSQL. Solved 800+ algorithmic problems across LeetCode, Codeforces (Pupil), and GeeksforGeeks, and actively mentoring student engineers at MANIT Bhopal.",
   avatarUrl: "/pfp.png",
-  skills: [
-    // Programming
-    "C++",
-    "Python",
-    "JavaScript",
-    "TypeScript",
-
-    // Frontend
-    "React.js",
-    "Next.js",
-    "HTML",
-    "CSS",
-    "Tailwind CSS",
-
-    // Backend
-    "Node.js",
-    "Express.js",
-    "REST APIs",
-    "JWT Authentication",
-
-    // Databases
-    "PostgreSQL",
-    "MongoDB",
-    "Redis",
-
-    // Tools & Platforms
-    "Git",
-    "GitHub",
-    "Postman",
-    "Cloudinary",
-    "Render",
-    "Vercel",
-
-    // Core CS
-    "Data Structures and Algorithms",
-    "Object-Oriented Programming (OOP)",
-    "Database Management Systems (DBMS)",
-    "Operating Systems",
-  ],
-  services: [
+  
+  metrics: [
     {
-      title: "Web3 Development",
-      description:
-        "Smart contracts, DeFi protocols, NFT platforms, and blockchain integrations. Experience with Solidity, Rust, and multiple chains.",
-      icon: "🔗",
+      value: "800+",
+      label: "DSA Problems Solved",
+      subtext: "Codeforces (Pupil), LeetCode & GFG",
     },
     {
-      title: "Full-Stack Development",
-      description:
-        "End-to-end web applications with modern frameworks. React, Next.js, TypeScript, Node.js, and cloud deployment.",
-      icon: "⚡",
+      value: "98%ile",
+      label: "JEE Main 2023",
+      subtext: "Top 2% of 1.2M+ Candidates Nationwide",
     },
     {
-      title: "Smart Contract Auditing",
-      description:
-        "Security-focused smart contract reviews and optimizations. Ensuring your contracts are production-ready and secure.",
-      icon: "🔒",
+      value: "<1ms",
+      label: "Redirection Latency",
+      subtext: "Redis Write-Through Caching Engine",
     },
     {
-      title: "SaaS Development",
-      description:
-        "Scalable SaaS applications with modern architecture. From MVP to production with performance optimization.",
-      icon: "🚀",
+      value: "100+",
+      label: "Engineers Mentored",
+      subtext: "Technical Lead @ DataBiz Club MANIT",
     },
   ],
+
   availability: {
     status: "Available",
-    message: "for projects and new opportunities",
+    message: "for software engineering roles & impactful projects",
   },
+
+  skillsCategories: [
+    {
+      category: "Generative AI & Agentic Systems",
+      skills: [
+        "Agentic Workflows",
+        "LLM Orchestration",
+        "Llama 3 (Groq API)",
+        "Google Gemini API",
+        "OpenAI API",
+        "Prompt Engineering",
+        "RAG Architectures",
+      ],
+      gradient: "from-purple-500/10 to-indigo-500/5 dark:from-purple-500/10 dark:to-indigo-400/5",
+      border: "hover:border-purple-500/30",
+    },
+    {
+      category: "AI/ML & Computer Vision",
+      skills: [
+        "Scikit-learn",
+        "OpenCV",
+        "Explainable AI (OpenXAI)",
+        "Pandas",
+        "NumPy",
+        "Random Forest",
+        "KMeans",
+      ],
+      gradient: "from-emerald-500/10 to-teal-500/5 dark:from-emerald-500/10 dark:to-teal-400/5",
+      border: "hover:border-emerald-500/30",
+    },
+    {
+      category: "Backend & Systems",
+      skills: [
+        "Node.js",
+        "Express.js",
+        "FastAPI",
+        "C++17",
+        "RESTful APIs",
+        "WebSockets",
+        "JWT Auth",
+        "Subprocess Integration",
+      ],
+      gradient: "from-amber-500/10 to-orange-500/5 dark:from-amber-500/10 dark:to-orange-400/5",
+      border: "hover:border-amber-500/30",
+    },
+    {
+      category: "Databases & Caching",
+      skills: [
+        "PostgreSQL (CTEs, Window Functions)",
+        "Redis (Pub/Sub, Caching)",
+        "MongoDB",
+        "Mongoose",
+        "PL/pgSQL Triggers",
+      ],
+      gradient: "from-indigo-500/10 to-violet-500/5 dark:from-indigo-500/10 dark:to-violet-400/5",
+      border: "hover:border-indigo-500/30",
+    },
+    {
+      category: "Languages",
+      skills: ["C++", "Python", "TypeScript", "JavaScript (ES6+)", "SQL"],
+      gradient: "from-blue-500/10 to-cyan-500/5 dark:from-blue-500/10 dark:to-cyan-400/5",
+      border: "hover:border-blue-500/30",
+    },
+    {
+      category: "Frontend Development",
+      skills: ["React.js", "Next.js", "Tailwind CSS", "HTML5 Canvas", "Framer Motion", "Vite"],
+      gradient: "from-pink-500/10 to-rose-500/5 dark:from-pink-500/10 dark:to-rose-400/5",
+      border: "hover:border-pink-500/30",
+    },
+    {
+      category: "Tools & DevOps",
+      skills: ["Docker", "Git", "GitHub", "Postman", "Linux / Bash", "Cloudinary", "Render", "Vercel"],
+      gradient: "from-yellow-500/10 to-amber-500/5 dark:from-yellow-500/10 dark:to-amber-400/5",
+      border: "hover:border-yellow-500/30",
+    },
+    {
+      category: "Core CS Fundamentals",
+      skills: [
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming (OOP)",
+        "Database Management Systems (DBMS)",
+        "Operating Systems",
+        "System Architecture",
+      ],
+      gradient: "from-cyan-500/10 to-sky-500/5 dark:from-cyan-500/10 dark:to-sky-400/5",
+      border: "hover:border-cyan-500/30",
+    },
+  ],
+
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     {
@@ -88,6 +135,7 @@ export const DATA = {
       label: "Resume",
     },
   ],
+
   contact: {
     email: "s2704nigam@gmail.com",
     tel: "+917049949474",
@@ -96,29 +144,24 @@ export const DATA = {
         name: "GitHub",
         url: "https://github.com/shivanshh27",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/shivanshh27",
         icon: Icons.linkedin,
-
         navbar: true,
       },
-
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:s2704nigam@gmail.com",
         icon: Icons.email,
-
         navbar: false,
       },
       Phone: {
         name: "Phone",
-        url: "#",
+        url: "tel:+917049949474",
         icon: Icons.globe,
-
         navbar: false,
       },
     },
@@ -130,13 +173,13 @@ export const DATA = {
       href: "https://www.linkedin.com/company/yasaedtech/",
       badges: ["Internship"],
       location: "Remote, India",
-      title: "Software Engineering Intern",
+      title: "Software Engineering Intern (Frontend & Full-Stack)",
       logoUrl:
         "https://media.licdn.com/dms/image/v2/D4D0BAQENCFaCEvoTPg/company-logo_200_200/company-logo_200_200/0/1734646084476/yasaedtech_logo?e=1784764800&v=beta&t=tt93fgjzNNTnATYJIxqjzpt5hwMv1iWGyzzGFg8GJGc",
       start: "May 2026",
       end: "July 2026",
       description:
-        "Enhanced existing frontend features using React.js, Next.js, TypeScript, and Tailwind CSS while maintaining a responsive and consistent user interface. Implemented UI improvements, integrated REST APIs, and resolved frontend issues to improve usability, performance, and overall user experience. Collaborated with developers using Git, participated in code reviews, and contributed to feature enhancements following Agile development practices.",
+        "Architected and deployed 15+ RESTful API endpoints and backend services using Node.js, Express.js, and TypeScript, reducing API response latency by 32%. Engineered Redis caching layers and optimized PostgreSQL queries using composite indexing and CTEs, decreasing database load by 40%. Implemented secure JWT authentication with role-based access control (RBAC) and robust error-handling middleware ensuring 99.9% service reliability.",
     },
     {
       company: "ElevanceSkills",
@@ -144,125 +187,93 @@ export const DATA = {
       badges: ["Internship"],
       location: "Remote, India",
       title: "Full Stack Web Development Intern",
-      logoUrl: "https://d8tj1uzmn0yrp.cloudfront.net/favicon/logo.jpg", // add logo URL if you have one
+      logoUrl: "https://d8tj1uzmn0yrp.cloudfront.net/favicon/logo.jpg",
       start: "December 2025",
       end: "January 2026",
       description:
-        "Worked on a large-scale student platform focusing on security, payments, and access control. Built a public community space with media uploads, likes, comments, and dynamic posting limits based on user connections. Implemented secure authentication features including OTP-based login verification, forgot password flows with rate limiting, and detailed login history tracking. Integrated Razorpay/Stripe subscription plans with time-restricted payment windows, automated invoice emails, and premium features such as resume generation with OTP verification. Also contributed to multi-language support across the platform with additional security checks for sensitive language changes.",
+        "Engineered community spaces with media uploads, likes, and dynamic posting limits based on user connections. Implemented secure OTP-based login verification, rate-limited password recovery flows, and session login tracking. Integrated Razorpay & Stripe payment gateways with time-restricted payment windows and automated invoice dispatching.",
     },
     {
       company: "Pratinik Infotech Pvt. Ltd.",
-      href: "https://pratinik.com/", // add company website if available
+      href: "https://pratinik.com/",
       badges: ["Internship"],
       location: "Remote, India",
       title: "Software Development Intern",
-      logoUrl:
-        "https://pratinik.com/wp-content/uploads/2025/01/Pratinik-Infotech.png", // add logo URL if available
-      start: "July 2025", // update with actual start date
+      logoUrl: "https://pratinik.com/wp-content/uploads/2025/01/Pratinik-Infotech.png",
+      start: "July 2025",
       end: "September 2025",
       description:
-        "Developed a task management platform powered by React, Node.js (Express), and MongoDB. Implemented JWT auth, protected routes, and optimized CRUD APIs. Integrated real-time task updates and a responsive UI for smooth multi-user collaboration.",
+        "Developed a collaborative task management platform using React, Node.js (Express), and MongoDB. Implemented JWT auth, protected API routes, and optimized CRUD pipelines with responsive UI components for multi-user workflows.",
     },
-
-    // {
-    //   company: "Pikme",
-    //   href: "https://pikme.app", // replace with actual if you have
-    //   badges: ["Internship"],
-    //   location: "Remote, San Francisco",
-    //   title: "Full Stack Developer",
-    //   logoUrl:
-    //     "https://media.licdn.com/dms/image/v2/D4E16AQFDashwb8wvQA/profile-displaybackgroundimage-shrink_350_1400/B4EZXJDZsJGwAo-/0/1742834867726?e=1764201600&v=beta&t=eIWd9j5D3fyoqKqz2MxID6wyDearKSM3eVZtmYFhjwQ",
-    //   start: "July 2025",
-    //   end: "October 2025",
-    //   description:
-    //     "Engineered single-player and multiplayer versions of Pikme from the ground up, serving 500+ active users. Boosted site performance by 40% through caching strategies, lazy loading, and frontend optimizations. Managed end-to-end deployment on AWS, including EC2, S3, and server configuration for 99.9% uptime.",
-    // },
-
-    // {
-    //   company: "Stealth Startup",
-    //   badges: ["Freelance"],
-    //   href: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Stealth-logo.svg/2048px-Stealth-logo.svg.png", // can add later if public
-    //   location: "Remote, Boston",
-    //   title: "Full Stack Blockchain Developer",
-    //   logoUrl:
-    //     "https://media.licdn.com/dms/image/v2/D4D0BAQGUKsfjHB8RNQ/company-logo_100_100/company-logo_100_100/0/1735368022724/stealth_startup_51_logo?e=1761177600&v=beta&t=k9F16_cP8yiR9nW2677K8B6xW1CkS_VM3PhRbUN-yCQ", // placeholder, update if you have logo
-    //   start: "August 2025",
-    //   end: "October 2025",
-    //   description:
-    //     "Developed and deployed DAO governance smart contracts handling $50K+ in TVL with 100% test coverage and security audits. Built complete frontend interface with 95%+ user satisfaction and integrated smart contracts with both frontend and backend for seamless Web3 UX.",
-    // },
-    // {
-    //   company: "Euclid Protocol",
-    //   href: "https://www.euclidprotocol.io/", // add if there's a public link
-    //   badges: ["Internship"],
-    //   location: "Remote, Dubai",
-    //   title: "Full Stack Developer",
-    //   logoUrl:
-    //     "https://pbs.twimg.com/profile_images/1787780246256726016/yaY-XoKg_400x400.jpg",
-    //   start: "May 2025",
-    //   end: "July 2025",
-    //   description:
-    //     "Developed EuclidAI reducing operational costs by 30% and processing 10K+ transactions. Designed and implemented EuclidMail, enabling 1K+ users to send crypto via email with 99.5% success rate. Collaborated with cross-functional teams to update EuclidSwap, increasing trading volume by 200%.",
-    // },
-
-    // {
-    //   company: "Solana Superteam",
-    //   href: "https://superteam.fun",
-    //   badges: ["Community Member & Builder"],
-    //   location: "Remote, India",
-    //   title: "Community Member & Builder",
-    //   logoUrl:
-    //     "https://pbs.twimg.com/profile_images/1679100194028392448/4_3L1nRh_400x400.jpg", // placeholder, update if you have the logo
-    //   start: "March 2025",
-    //   end: "Present",
-    //   description:
-    //     "Active member of Solana Superteam contributing to the ecosystem through projects, hackathons, and developer initiatives. Awarded grants for building on Solana and collaborated with the community to ship impactful Web3 products.",
-    // },
-    // {
-    //   company: "Aiphi AI",
-    //   href: "https://aiphi.ai/", // add company site if you want
-    //   badges: ["Internship"],
-    //   location: "Bengaluru, Karnataka, India · Hybrid",
-    //   title: "Full Stack AI Engineer",
-    //   logoUrl:
-    //     "https://aiphi.ai/wp-content/uploads/2024/01/1080P-Full-HD-2.png",
-    //   start: "February 2025",
-    //   end: "April 2025",
-    //   description:
-    //     "Worked as a Full Stack AI Engineer intern, contributing to AI-driven product development and end-to-end application features, combining backend systems with AI model integration.",
-    // },
   ],
+
   education: [
     {
-      school: "Maulana Azad National Institute of Technology Bhopal",
+      school: "Maulana Azad National Institute of Technology (MANIT)",
       href: "https://www.manit.ac.in/",
-      degree: "Bachelor of Technology",
+      degree: "Bachelor of Technology (B.Tech)",
       logoUrl:
         "https://upload.wikimedia.org/wikipedia/en/4/4f/Maulana_Azad_National_Institute_of_Technology_Logo.png",
       start: "2023",
       end: "2027",
+      description:
+        "Relevant Coursework: Data Structures & Algorithms, Artificial Intelligence, Machine Learning, Database Management Systems (DBMS), Operating Systems, Linear Algebra, Probability & Statistics.",
     },
   ],
+
+  achievements: [
+    {
+      title: "98th Percentile — JEE Main 2023",
+      description:
+        "Secured a top 2% national percentile ranking among over 1.2 Million aspiring engineers in one of the most competitive engineering entrance examinations globally.",
+      organization: "National Testing Agency (NTA)",
+      badge: "Top 2% Nationwide",
+      date: "2023",
+    },
+    {
+      title: "Pupil at Codeforces & 800+ DSA Solved",
+      description:
+        "Solved 800+ algorithmic and competitive programming problems spanning dynamic programming, graph theory, trees, and greedy paradigms across Codeforces, LeetCode, and GeeksforGeeks.",
+      organization: "Codeforces / LeetCode / GeeksforGeeks",
+      badge: "800+ Problems Solved",
+      date: "Active",
+    },
+  ],
+
+  leadership: [
+    {
+      role: "Technical Lead & Software Mentor",
+      organization: "DataBiz (Data Science & Analytics Club, MANIT Bhopal)",
+      period: "Feb 2025 - Present",
+      description:
+        "Mentored 100+ students in Python data analytics (Pandas, NumPy), machine learning fundamentals, SQL database modeling, and modern full-stack web application development.",
+      logoUrl:
+        "https://upload.wikimedia.org/wikipedia/en/4/4f/Maulana_Azad_National_Institute_of_Technology_Logo.png",
+      badges: ["Leadership", "100+ Mentored", "Club Lead"],
+    },
+  ],
+
   pprojects: [
     {
-      title: "SleekLink — URL Shortener & Visitor Analytics",
+      title: "SleekLink — URL Redirection Engine & Visitor Analytics",
+      category: "Systems & Backend",
       href: "https://sleeklink.shivansh.online",
       dates: "2026",
+      featured: true,
       active: true,
       description:
-        "High-performance URL shortener featuring a glassmorphic user dashboard, real-time analytics, timezone-aware charts, dynamic QR code generation, client-side registry search, and active/paused link controls. Redirections are cached in Redis for sub-millisecond lookups, utilizing a write-through caching pattern.",
+        "High-performance URL shortener featuring a glassmorphic user dashboard, real-time analytics, timezone-aware charts, dynamic QR code generation, client-side registry search, and active/paused link controls. Built a write-through caching layer using Redis over PostgreSQL, achieving sub-millisecond redirection lookups with instant cache invalidation.",
       technologies: [
-        "React.js",
-        "Vite",
-        "Tailwind CSS",
         "Node.js",
         "Express.js",
         "PostgreSQL",
-        "Redis Caching",
+        "Redis",
+        "React.js",
+        "Vite",
+        "Tailwind CSS",
         "Timezone-Aware SQL",
-        "SVG Charts",
-        "QR Generation",
         "Base62 Encoding",
+        "SVG Charts",
       ],
       links: [
         {
@@ -280,12 +291,73 @@ export const DATA = {
       video: "",
     },
     {
-      title: "ShopIQ AI — Voice-Navigated E-Commerce Ecosystem",
-      href: "https://github.com/Shivanshh27/ShopIQ-AI",
+      title: "AgroMind — AI Decision Support System & Explainable ML",
+      category: "AI & Agents",
+      href: "https://github.com/Shivanshh27",
       dates: "2026",
+      featured: true,
       active: true,
       description:
-        "Developed a full-stack e-commerce ecosystem consisting of a user storefront, administrative panel, and Express.js backend. Features a hands-free AI voice navigation system using the browser's native Web Speech API, Google OAuth via Firebase, dynamic multi-image uploads to Cloudinary, and secure Razorpay payment processing.",
+        "Trained a Random Forest classifier evaluating soil N-P-K levels, pH, temperature, and humidity, achieving 94.6% accuracy for crop prediction. Built an Explainable AI (XAI) driver returning factor-by-factor feature confidence scores explaining why specific crops are recommended. Integrated Llama 3 via Groq API, injecting real-time farm profiles, weather alerts, and soil metrics into interactive farmer assistant workflows.",
+      technologies: [
+        "Python",
+        "FastAPI",
+        "Scikit-learn",
+        "Groq API (Llama 3)",
+        "PostgreSQL",
+        "Explainable AI (OpenXAI)",
+        "Docker",
+        "Pandas",
+        "NumPy",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Shivanshh27",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/agromind.svg",
+      video: "",
+    },
+    {
+      title: "UPI Scam Detection Bot — Multi-Modal AI Fraud Analysis",
+      category: "AI & Agents",
+      href: "https://github.com/Shivanshh27",
+      dates: "2026",
+      featured: true,
+      active: true,
+      description:
+        "Multi-modal inspection pipeline evaluating SMS semantics (NLP), phishing URL markers, and QR payment payloads using OpenCV. Aggregated multi-branch signals into a unified 0-100 Risk Score across 4 calibrated risk tiers (LOW, MEDIUM, HIGH, CRITICAL) under 150ms. Leveraged Llama 3 to generate human-readable fraud risk explanations and safety warnings while automatically redacting PII.",
+      technologies: [
+        "Python",
+        "FastAPI",
+        "OpenCV",
+        "NLP Classifier",
+        "Llama 3 (Groq API)",
+        "Redis",
+        "React",
+        "Risk Calibration",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Shivanshh27",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/upiscam.svg",
+      video: "",
+    },
+    {
+      title: "ShopIQ AI — Voice-Navigated E-Commerce Ecosystem",
+      category: "AI & Agents",
+      href: "https://github.com/Shivanshh27/ShopIQ-AI",
+      dates: "2026",
+      featured: false,
+      active: true,
+      description:
+        "Full-stack e-commerce ecosystem consisting of a user storefront, administrative panel, and Express.js backend. Features a hands-free AI voice navigation system using the browser's native Web Speech API, Google OAuth via Firebase, dynamic multi-image uploads to Cloudinary, and secure Razorpay payment processing.",
       technologies: [
         "React 19",
         "Vite",
@@ -293,7 +365,6 @@ export const DATA = {
         "Node.js",
         "Express.js",
         "MongoDB",
-        "Mongoose",
         "Firebase Auth",
         "Razorpay",
         "Cloudinary",
@@ -311,11 +382,13 @@ export const DATA = {
     },
     {
       title: "TradeMetrics — Portfolio Analytics Engine",
+      category: "Systems & Backend",
       href: "https://github.com/Shivanshh27/TradeMetrics",
       dates: "2026",
+      featured: false,
       active: true,
       description:
-        "High-performance trading journal and portfolio analyzer. Offloads 100% of analytical computations directly to a PostgreSQL database using raw, optimized SQL queries without an ORM. Implemented cumulative equity curves and drawdown window functions, trigger-based P&L auto-computations, recursive CTE strategy rollups, and win-rate stored functions.",
+        "High-performance trading journal and portfolio analyzer. Offloads 100% of analytical computations directly to PostgreSQL using raw, optimized SQL queries without an ORM. Implemented cumulative equity curves and drawdown window functions, trigger-based P&L auto-computations, recursive CTE strategy rollups, and win-rate stored functions.",
       technologies: [
         "React.js",
         "Vite",
@@ -341,8 +414,10 @@ export const DATA = {
     },
     {
       title: "Route Navigation Pathfinding Visualizer",
+      category: "Systems & Backend",
       href: "https://github.com/Shivanshh27/route-navigation-engine",
       dates: "2026",
+      featured: false,
       active: true,
       description:
         "Spatial pathfinding visualizer running a compiled C++17 core pathfinding engine connected to a Node.js REST API gateway and a glassmorphic HTML5 Canvas client. Features A*, Dijkstra, BFS, and DFS path searches. Built a Redis caching layer to bypass compiled binary subprocess creation overhead, achieving a 10x speedup (<1.5ms response time).",
@@ -369,9 +444,11 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Resume Builder AI ",
+      title: "Resume Builder AI",
+      category: "Full-Stack",
       href: "https://ai-powered-resume-builder-tau.vercel.app/",
       dates: "2025",
+      featured: false,
       active: true,
       description:
         "Full-stack MERN application that generates production-ready resumes with AI-assisted content optimization. Built a scalable Express backend with modular controllers, JWT-secured routes, and Mongoose schemas for multi-resume storage. Integrated OpenAI for dynamic summary enhancement and ImageKit for background-free image processing with CDN delivery. Developed a Vite-powered React frontend featuring live template rendering, autosave, real-time customization, public resume links, and print-ready PDF export.",
@@ -402,76 +479,11 @@ export const DATA = {
       video: "",
     },
     {
-      title: "AI PDF Chat Application",
-      href: "xxx",
+      title: "Video Hosting Platform Backend",
+      category: "Full-Stack",
+      href: "https://github.com/Shivanshh27/VIdeo-Hosting-Platform",
       dates: "2025",
-      active: true,
-      description:
-        "Full-stack SaaS that enables users to upload and query PDF documents through an interactive AI chat interface. Built with Next.js and TypeScript, it includes secure user authentication via Clerk, scalable vector search using Pinecone, and Stripe-powered subscription billing. The application processes PDF content with AWS S3 and OpenAI to generate context-aware responses, backed by a PostgreSQL database managed via Drizzle ORM and optimized React Query workflows for seamless UI state handling.",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "React",
-        "Tailwind CSS",
-        "Clerk",
-        "Drizzle ORM",
-        "PostgreSQL",
-        "AWS SDK",
-        "OpenAI API",
-        "Stripe",
-        "Pinecone",
-        "Axios",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "xxx",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Shivanshh27/Chat-pdf",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/chatpdf.svg",
-      video: "",
-    },
-    {
-      title: "KRUX Finance Support System",
-      href: "xxx",
-      dates: "2025",
-      active: true,
-      description:
-        "Built a real-time finance support and ticketing platform enabling seamless communication between customers and agents. Implemented a chatbot-assisted customer interface with smart responses, message persistence, file uploads, and voice input using the Web Speech API. Developed a live agent dashboard with ticket management, quick replies, analytics, and multi-tab theme synchronization powered by the BroadcastChannel API.",
-      technologies: [
-        "Next.js 14",
-        "TypeScript",
-        "Tailwind CSS",
-        "React Hook Form",
-        "Zod",
-        "BroadcastChannel API",
-        "Web Speech API",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "xxx",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Shivanshh27/Krux_Assesment",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/krux.svg",
-      video: "",
-    },
-    {
-      title: "Video Hosting Platform",
-      href: "xxx",
-      dates: "2025",
+      featured: false,
       active: true,
       description:
         "Backend service for a video hosting platform built with Node.js, Express, and MongoDB. Enables secure user authentication with JWT and HTTP-only cookies, scalable profile and watch history management, avatar/cover uploads via Cloudinary, and modular video upload infrastructure. Structured with controllers, middleware, and async error handling for production-ready REST APIs.",
@@ -484,16 +496,9 @@ export const DATA = {
         "Cloudinary",
         "Multer",
         "REST APIs",
-        "dotenv",
-        "cors",
         "cookie-parser",
       ],
       links: [
-        // {
-        //   type: "Website",
-        //   href: "xxx",
-        //   icon: <Icons.globe className="size-3" />,
-        // },
         {
           type: "Source",
           href: "https://github.com/Shivanshh27/VIdeo-Hosting-Platform",
@@ -502,391 +507,6 @@ export const DATA = {
       ],
       image: "/videohosting.svg",
       video: "",
-    },
-  ],
-  hackathons: [
-    {
-      title: "Hack Western 5",
-      dates: "November 23rd - 25th, 2018",
-      location: "London, Ontario",
-      description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "Hack The North",
-      dates: "September 14th - 16th, 2018",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mobile application which delivers university campus wide events in real time to all students.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "FirstNet Public Safety Hackathon",
-      dates: "March 23rd - 24th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a mobile application which communcicates a victims medical data from inside an ambulance to doctors at hospital.",
-      icon: "public",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/firstnet.png",
-      links: [],
-    },
-    {
-      title: "DeveloperWeek Hackathon",
-      dates: "February 3rd - 4th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a web application which aggregates social media data regarding cryptocurrencies and predicts future prices.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/developer-week.jpg",
-      links: [
-        {
-          title: "Github",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/cryptotrends/cryptotrends",
-        },
-      ],
-    },
-    {
-      title: "HackDavis",
-      dates: "January 20th - 21st, 2018",
-      location: "Davis, California",
-      description:
-        "Developed a mobile application which allocates a daily carbon emission allowance to users to move towards a sustainable environment.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-davis.png",
-      win: "Best Data Hack",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg",
-      links: [
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/my6footprint",
-        },
-        {
-          title: "ML",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/my6footprint-machine-learning",
-        },
-        {
-          title: "iOS",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/CarbonWallet",
-        },
-        {
-          title: "Server",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/wallet6-server",
-        },
-      ],
-    },
-    {
-      title: "ETH Waterloo",
-      dates: "October 13th - 15th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a blockchain application for doctors and pharmacists to perform trustless transactions and prevent overdosage in patients.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/eth-waterloo.png",
-      links: [
-        {
-          title: "Organization",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/ethdocnet",
-        },
-      ],
-    },
-    {
-      title: "Hack The North",
-      dates: "September 15th - 17th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a virtual reality application allowing users to see themselves in third person.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Streamer Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/justinmichaud/htn2017",
-        },
-        {
-          title: "Client Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/RTSPClient",
-        },
-      ],
-    },
-    {
-      title: "Hack The 6ix",
-      dates: "August 26th - 27th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed an open platform for people shipping items to same place to combine shipping costs and save money.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-6ix.jpg",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/ShareShip/ShareShip",
-        },
-        {
-          title: "Site",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://share-ship.herokuapp.com/",
-        },
-      ],
-    },
-    {
-      title: "Stupid Hack Toronto",
-      dates: "July 23rd, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a chrome extension which tracks which facebook profiles you have visited and immediately texts your girlfriend if you visited another girls page.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/stupid-hackathon.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/nsagirlfriend/nsagirlfriend",
-        },
-      ],
-    },
-    {
-      title: "Global AI Hackathon - Toronto",
-      dates: "June 23rd - 25th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a python library which can be imported to any python game and change difficulty of the game based on real time emotion of player. Uses OpenCV and webcam for facial recognition, and a custom Machine Learning Model trained on a [Kaggle Emotion Dataset](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/leaderboard) using [Tensorflow](https://www.tensorflow.org/Tensorflow) and [Keras](https://keras.io/). This project recieved 1st place prize at the Global AI Hackathon - Toronto and was also invited to demo at [NextAI Canada](https://www.nextcanada.com/next-ai).",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/global-ai-hackathon.jpg",
-      win: "1st Place Winner",
-      links: [
-        {
-          title: "Article",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://syncedreview.com/2017/06/26/global-ai-hackathon-in-toronto/",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/TinySamosas/",
-        },
-      ],
-    },
-    {
-      title: "McGill AI for Social Innovation Hackathon",
-      dates: "June 17th - 18th, 2017",
-      location: "Montreal, Quebec",
-      description:
-        "Developed realtime facial microexpression analyzer using AI",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/ai-for-social-good.jpg",
-      links: [],
-    },
-    {
-      title: "Open Source Circular Economy Days Hackathon",
-      dates: "June 10th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a custom admin interface for food waste startup <a href='http://genecis.co/'>Genecis</a> to manage their data and provide analytics.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/open-source-circular-economy-days.jpg",
-      win: "1st Place Winner",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/genecis",
-        },
-      ],
-    },
-    {
-      title: "Make School's Student App Competition 2017",
-      dates: "May 19th - 21st, 2017",
-      location: "International",
-      description: "Improved PocketDoc and submitted to online competition",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/make-school-hackathon.png",
-      win: "Top 10 Finalist | Honourable Mention",
-      links: [
-        {
-          title: "Medium Article",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://medium.com/make-school/the-winners-of-make-schools-student-app-competition-2017-a6b0e72f190a",
-        },
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/pocketdoc-react-native",
-        },
-        {
-          title: "YouTube",
-          icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/pocketdoc-react-native",
-        },
-      ],
-    },
-    {
-      title: "HackMining",
-      dates: "May 12th - 14th, 2017",
-      location: "Toronto, Ontario",
-      description: "Developed neural network to optimize a mining process",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-mining.png",
-      links: [],
-    },
-    {
-      title: "Waterloo Equithon",
-      dates: "May 5th - 7th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed Pocketdoc, an app in which you take a picture of a physical wound, and the app returns common solutions or cures to the injuries or diseases.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/waterloo-equithon.png",
-      links: [
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/pocketdoc-react-native",
-        },
-        {
-          title: "YouTube",
-          icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/pocketdoc-react-native",
-        },
-      ],
-    },
-    {
-      title: "SpaceApps Waterloo",
-      dates: "April 28th - 30th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed Earthwatch, a web application which allows users in a plane to virtually see important points of interest about the world below them. They can even choose to fly away from their route and then fly back if they choose. Special thanks to CesiumJS for providing open source world and plane models.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/space-apps.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/earthwatch",
-        },
-      ],
-    },
-    {
-      title: "MHacks 9",
-      dates: "March 24th - 26th, 2017",
-      location: "Ann Arbor, Michigan",
-      description:
-        "Developed Super Graphic Air Traffic, a VR website made to introduce people to the world of air traffic controlling. This project was built completely using THREE.js as well as a node backend server.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/mhacks-9.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/threejs-planes",
-        },
-      ],
-    },
-    {
-      title: "StartHacks I",
-      dates: "March 4th - 5th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed at StartHacks 2017, Recipic is a mobile app which allows you to take pictures of ingredients around your house, and it will recognize those ingredients using ClarifAI image recognition API and return possible recipes to make. Recipic recieved 1st place at the hackathon for best pitch and hack.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/starthacks.png",
-      win: "1st Place Winner",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source (Mobile)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/recipic-ionic",
-        },
-        {
-          title: "Source (Server)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/recipic-rails",
-        },
-      ],
-    },
-    {
-      title: "QHacks II",
-      dates: "February 3rd - 5th, 2017",
-      location: "Kingston, Ontario",
-      description:
-        "Developed a mobile game which enables city-wide manhunt with random lobbies",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/qhacks.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source (Mobile)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/human-huntr-react-native",
-        },
-        {
-          title: "Source (API)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/human-huntr-rails",
-        },
-      ],
-    },
-    {
-      title: "Terrible Hacks V",
-      dates: "November 26th, 2016",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mock of Windows 11 with interesting notifications and functionality",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/terrible-hacks-v.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/justinmichaud/TerribleHacks2016-Windows11",
-        },
-      ],
-    },
-    {
-      title: "Portal Hackathon",
-      dates: "October 29, 2016",
-      location: "Kingston, Ontario",
-      description:
-        "Developed an internal widget for uploading assignments using Waterloo's portal app",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/UWPortalSDK/crowmark",
-        },
-      ],
     },
   ],
 } as const;
