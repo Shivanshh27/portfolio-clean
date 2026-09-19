@@ -173,7 +173,7 @@ export const DATA = {
       href: "https://www.linkedin.com/company/yasaedtech/",
       badges: ["Internship"],
       location: "Remote, India",
-      title: "Software Engineering Intern (Frontend & Full-Stack)",
+      title: "Software Engineering Intern",
       logoUrl:
         "https://media.licdn.com/dms/image/v2/D4D0BAQENCFaCEvoTPg/company-logo_200_200/company-logo_200_200/0/1734646084476/yasaedtech_logo?e=1784764800&v=beta&t=tt93fgjzNNTnATYJIxqjzpt5hwMv1iWGyzzGFg8GJGc",
       start: "May 2026",
