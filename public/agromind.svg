@@ -46,12 +46,12 @@
   <circle cx="55" cy="51" r="4.5" fill="#ef4444" />
   <circle cx="70" cy="51" r="4.5" fill="#eab308" />
   <circle cx="85" cy="51" r="4.5" fill="#22c55e" />
-  <text x="210" y="55" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">AgroMind AI • XAI Engine</text>
+  <text x="210" y="55" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">AgroMind AI &#x2022; XAI Engine</text>
 
-  <!-- Left Column: ML Metrics & Soil Parameters -->
+  <!-- Left Column: ML Metrics &amp; Soil Parameters -->
   <g transform="translate(50, 80)">
     <rect width="180" height="165" rx="8" fill="#04120a" fill-opacity="0.8" stroke="#ffffff" stroke-opacity="0.08" />
-    <text x="12" y="24" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">SOIL & SENSOR TELEMETRY</text>
+    <text x="12" y="24" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">SOIL &amp; SENSOR TELEMETRY</text>
     
     <!-- Nitrogen Bar -->
     <text x="12" y="48" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="9.5">Nitrogen (N): 88 mg/kg</text>
@@ -63,20 +63,20 @@
     <rect x="12" y="82" width="156" height="5" rx="2.5" fill="#1f2937" />
     <rect x="12" y="82" width="95" height="5" rx="2.5" fill="url(#emeraldGrad)" />
 
-    <!-- pH & Moisture -->
+    <!-- pH &amp; Moisture -->
     <text x="12" y="104" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="9.5">Soil pH: 6.8 (Optimal)</text>
     <rect x="12" y="110" width="156" height="5" rx="2.5" fill="#1f2937" />
     <rect x="12" y="110" width="120" height="5" rx="2.5" fill="url(#goldGrad)" />
 
-    <text x="12" y="132" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="9.5">Humidity: 82% | Temp: 24°C</text>
+    <text x="12" y="132" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="9.5">Humidity: 82% | Temp: 24&#176;C</text>
     <rect x="12" y="138" width="156" height="5" rx="2.5" fill="#1f2937" />
     <rect x="12" y="138" width="140" height="5" rx="2.5" fill="#38bdf8" />
   </g>
 
-  <!-- Right Column: XAI Prediction & LLM Insights -->
+  <!-- Right Column: XAI Prediction &amp; LLM Insights -->
   <g transform="translate(245, 80)">
     <rect width="205" height="165" rx="8" fill="#04120a" fill-opacity="0.8" stroke="#10b981" stroke-opacity="0.2" />
-    <text x="14" y="24" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="700">AI PREDICTION & EXPLANATION</text>
+    <text x="14" y="24" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="700">AI PREDICTION &amp; EXPLANATION</text>
 
     <rect x="14" y="34" width="177" height="36" rx="6" fill="#10b981" fill-opacity="0.12" stroke="#10b981" stroke-opacity="0.3" />
     <text x="24" y="50" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="10" font-weight="700">Optimal Crop: Wheat / Rice</text>
@@ -85,9 +85,9 @@
     <!-- Factor Confidence Scores -->
     <text x="14" y="88" fill="#d1d5db" font-family="system-ui, sans-serif" font-size="9.5" font-weight="600">Explainable AI (XAI) Weights:</text>
     
-    <text x="14" y="105" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="8.5">• Nitrogen Ratio Weight: +38%</text>
-    <text x="14" y="118" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="8.5">• Soil Moisture & Humidity: +32%</text>
-    <text x="14" y="131" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="8.5">• Microclimate Seasonality: +24%</text>
+    <text x="14" y="105" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="8.5">&#x2022; Nitrogen Ratio Weight: +38%</text>
+    <text x="14" y="118" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="8.5">&#x2022; Soil Moisture &amp; Humidity: +32%</text>
+    <text x="14" y="131" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="8.5">&#x2022; Microclimate Seasonality: +24%</text>
 
     <!-- Llama 3 Pill -->
     <rect x="14" y="140" width="177" height="16" rx="4" fill="#065f46" fill-opacity="0.5" />
